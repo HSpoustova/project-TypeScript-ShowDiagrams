@@ -9,7 +9,7 @@ interface BoxProps {
 }
 
 export const BoxView = ({
-  //key,
+  key,
   posX,
   posY,
   width,
@@ -19,7 +19,7 @@ export const BoxView = ({
 }: BoxProps): JSX.Element => {
   return (
     <>
-      <g>
+      <g key={key}>
         <rect
           x={posX}
           y={posY}
