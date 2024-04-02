@@ -5,7 +5,7 @@ export interface BaseModel {
   connections: Connections[];
 }
 
-export interface Box extends BaseModel {
+export interface Box {
   posX: number;
   posY: number;
   width: number;
@@ -14,7 +14,7 @@ export interface Box extends BaseModel {
   label: string;
 }
 
-export interface Connections extends BaseModel {
+export interface Connections {
   from: number;
   to: number;
 }
